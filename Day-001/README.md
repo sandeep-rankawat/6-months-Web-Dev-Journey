@@ -4,6 +4,26 @@
 ## 🎯 Challenge: 100-150 Day Web Development Journey
 
 ## What I Learned Today
+1. What is HTML?
+Ans HTML stands for "Hyper Text Markup Language"
+    HyperText - The text that contains links to another websites, documents and texts.
+    Markup - Way to give instruction to computer about how content should be displayed and organized
+    Language - Means language that a coupter , server or browser interpret and understand
+
+2. HTML Syntax :- What are tags, opening & closing tag, elements?
+
+    Tag-  HTML tags wo keywords hain jo angle brackets < > ke andar likhte hain. Ye browser ko batate hain ki content ko kaise display karna hai or unka kuch special meaning h jo SEO mein use hote h. Example- <h1></h1>
+
+    Opening Tag- Html tag ke aage wale hise ko opening tag kehte h. Example- <h1>, <p>, <div>, etc.
+
+    Closing Tag- HTML Tag ke end wale hise ko closing tag kehte h. Jo content ki boudery set kerta h. Example- </h1>, </p>, </div>, etc
+
+    Elements- HTML Tag ko hi element kehte h lekin keval tab jab unke ander content ho. Example <h1>This is an Element.</h1> ye pura ek element h.
+
+    Bonus**
+    Self-Closing Tag- Ye wo html tag jinka koi closing tag nhi hota or inke ander content nhi likha jata but atrribute hote h, inka sytax thoda alag hota.
+        Example- <br>, <img>, <video>, <hr>, <meta>, <link>, etc.
+3. 
 
 ### HTML Boilerplate Structure
 Today I learned the essential HTML boilerplate that forms the foundation of every web page. The boilerplate is the basic HTML structure that every HTML document should have.
