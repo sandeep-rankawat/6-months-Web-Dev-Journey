@@ -16,12 +16,20 @@ Today I learned the essential HTML boilerplate that forms the foundation of ever
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Day-001 | The Boiler Plate Basics</title>
 </head>
 <body>
-    
+    <!-- Code written here -->
 </body>
 </html>
+
+### How to Write Boiler Plate Code?
+"This boiler plate code can we written manually but in vscode(currently using) ther is two way to write in with no minutes"
+#### 1. First Way - html:5
+Write html you see 3 suggestions and click on "html:5" option and you will see that it will automatically writen
+
+#### 2. Second way - !
+Just type ! from your keyboard and hit enter and you see the boiler plate code writen automatically like copy and paste.
 
 ### Breaking Down Each Component
 #### 1. <!DOCTYPE html>
@@ -77,3 +85,4 @@ Should be descriptive and unique for each page
 Contains all visible content
 
 Where all HTML elements like headings, paragraphs, images go
+
