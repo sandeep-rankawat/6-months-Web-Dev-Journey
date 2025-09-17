@@ -18,7 +18,7 @@
 
 - **Closing Tag** - HTML Tag ke end wale hise ko closing tag kehte h. Jo content ki boudery set kerta h. Example- `</h1>, </p>, </div>`, etc
 
-- **Elements** - HTML Tag ko hi element kehte h lekin keval tab jab unke ander content ho. Example `<h1>This is an Element.</h1>` ye pura ek element h.
+- **Elements** - HTML Tag ko hi element kehte h lekin keval tab jab unke ander content ho. Example- `<h1>This is an Element.</h1>` ye pura ek element h.
 
 - **Bonus**
     *Self-Closing Tag* - Ye wo html tag jinka koi closing tag nhi hota or inke ander content nhi likha jata but atrribute hote h, inka sytax thoda alag hota.
@@ -30,6 +30,7 @@ Here learned the essential HTML boilerplate that forms the foundation of every w
 ### Basic HTML Boilerplate Code
 
 ### HTML CODE - EXPLAIN
+
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -91,7 +92,7 @@ width=device-width sets width to device screen width
 
 initial-scale=1.0 sets initial zoom level
 
-#### 6. `<title>`
+#### 6.  `<title>`
 
 Text that appears in browser tab
 
@@ -99,7 +100,7 @@ Important for SEO (Search Engine Optimization)
 
 Should be descriptive and unique for each page
 
-#### 7. `<body>`
+#### 7.  `<body>`
 
 Contains all visible content
 
