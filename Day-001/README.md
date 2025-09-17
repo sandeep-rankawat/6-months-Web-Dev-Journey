@@ -23,7 +23,6 @@ Ans HTML stands for "Hyper Text Markup Language"
     Bonus**
     Self-Closing Tag- Ye wo html tag jinka koi closing tag nhi hota or inke ander content nhi likha jata but atrribute hote h, inka sytax thoda alag hota.
         Example- <br>, <img>, <video>, <hr>, <meta>, <link>, etc.
-3. 
 
 ### HTML Boilerplate Structure
 Today I learned the essential HTML boilerplate that forms the foundation of every web page. The boilerplate is the basic HTML structure that every HTML document should have.
