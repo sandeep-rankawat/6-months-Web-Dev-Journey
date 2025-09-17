@@ -128,7 +128,7 @@ In html single line and multiline comment having same syntax.
     Here is Example of Attributes: id, class, title and many more
 </p>
 ```
-In This html code id, class, title ye sab attribute h or para inki value hrr attribute ki value alag ya same bhi ho skti h.
+In This html code id, class, title  all are attributes and para is value of corresponding attributes. Here these value are same it can be differect acc to need.
 **Attributes Explained:**
 - **`id`**: Unique identifier for element, use to target element when styling or scripting of done on the element.
 - **`class`**: CSS styling hook for grouping, same like id but not unique a class have many values seprated by space and different element have same classes.
