@@ -8,6 +8,10 @@ Starting my journey from web development enthusiast to job-ready full-stack deve
 
 ## 📈 Progress Tracker
 - **Day 0:** Journey begins! 🎯
+- **Day 1:** HTML Basics :
+    -   Boiler Plate Code, 
+    -   Syntax - Tag(Opening-Closing tag), Element and Self Closing Tag
+- **Day 2:** Headings, Comments, Breaking Elements, Universal Container Element and Attributes
 
 ## 🛠️ Tech Stack I'll Learn
 - Frontend: HTML, CSS, JavaScript, React
