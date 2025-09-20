@@ -9,7 +9,7 @@
 
 <body>
 
-    <!-- ========== Text Formatting ========== -->
+    <!-- ----- Chapter-2: Text Formatting ----- -->
 
     <!-- Strong tag and bold tag -->
     <strong>This is Strong Tag</strong>
@@ -33,16 +33,69 @@
     <p>e=mc<sup>2</sup></p>
 
     <!-- Pre-Formatted Tags -->
+    <!-- Pre tag -->
     <pre>
-    Name:     John Doe
-    Age:      25
-    City:     New York
-    Email:    john@email.com
-    </pre>
+         Name:     John Doe
+         Age:      25
+         City:     New York
+         Email:    john@email.com
+        </pre>
 
+    <!-- kbd or keyboard tag -->
     <p>Use <kbd>Alt</kbd> + <kbd>Tab</kbd> to switch between windows.</p>
 
-    <p>This website uses <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <!-- abrr or abrrevation tag -->
+    <p>This website uses <abbr title="HyperText Markup Language">HTML</abbr> and <abbr
+            title="Cascading Style Sheets">CSS</abbr>.</p>
+
+
+    <!-- ----- Chapter-3: Lists in HTML ----- -->
+    <!-- unordered list -->
+    <ul type="circle">
+        <li>Apple</li> <!-- list element -->
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Guava</li>
+        <li>Pineapple</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol type="I">
+        <li>Open the door then close it</li>
+        <li>Wash your hand and feet</li>
+        <li>Then go to bed</li>
+    </ol>
+
+    <!-- discription list -->
+    <dl> <!-- Description List container -->
+        <dt>Term 1</dt> <!-- Description Term -->
+        <dd>Definition of Term 1</dd> <!-- Description Definition (विवरण) -->
+
+        <dt>Term 2</dt>
+        <dd>Definition of Term 2</dd>
+    </dl>
+
+
+
+    <!-- Chapte-4: Links and Anchor Tag -->
+    <button type="button" onclick="window.location.href='www.google.com'">Google Button</button>
+    <!-- convert any element to clickable link using onclick attribute -->
+
+    <!-- The Anchor tag -->
+    <!-- link same page section using anchor tag -->
+    <ul type="none">
+        <li><a href="#blog">Google link</a></li>
+        <!-- link another page via anchor Tag -->
+        <li><a href="www.google.com">Google link</a> </li>
+        <!-- to open link or page in new tab  -->
+        <li><a href="www.google.com" target="_blank">Google link 2</a> </li>
+        <!-- complete and seo anchor link for linking any page -->
+        <li><a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Google link 3</a> </li>
+        <!-- mail to link -->
+        <li><a href="mailto:support-in@google.com" title="For Complaints and Grievances only">Mail to Google</a> </li>
+        <!-- for contact calling -->
+        <li><a href="tel:+999999999" title="Contact for any quiry">contact</a> </li>
+    </ul>
 
 
 </body>
