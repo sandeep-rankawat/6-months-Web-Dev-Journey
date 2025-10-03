@@ -1,4 +1,5 @@
-# Chapter-4: Text Formatting Tags
+# Day - 3 : HTML Phase - 1
+## Chapter-4: Text Formatting Tags
 HTML provides two categories of formatting tags: Physical Tags (visual appearance) and Semantic Tags (meaning and importance).
 
 ## Bold and Strong Text
