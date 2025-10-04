@@ -1,6 +1,6 @@
 # Day 4 | HTML Phase 2
 
-This project contains example code showcasing how to use various multimedia and interactive HTML tags including images, audio, video, maps, and embedded iframes.
+This phase contains various multimedia and interactive HTML tags including images, audio, video, maps, and embedded iframes.
 
 ## Multimedia tags
 
