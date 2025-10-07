@@ -1,8 +1,8 @@
-# Day - 3 : HTML Phase - 1
-## Chapter-4: Text Formatting Tags
+# Chapter 3 : HTML Phase - 1
+## 📚 **Text Formatting Tags**
 HTML provides two categories of formatting tags: Physical Tags (visual appearance) and Semantic Tags (meaning and importance).
 
-## Bold and Strong Text
+## **1. Bold and Strong Text**
 
     <strong>This is Strong Tag</strong>  <!-- Semantic: Important content -->
 **Output**:  <strong>This is Strong Tag</strong> 
@@ -15,7 +15,7 @@ HTML provides two categories of formatting tags: Physical Tags (visual appearanc
 
 - `<b>`: Makes text visually bold without semantic meaning
 
-## Italic and Emphasis
+## **2. Italic and Emphasis**
 
     <i>This is italic tag</i>           <!-- Physical: Visual italic -->
 **Output**: <i>This is italic tag</i> 
@@ -28,28 +28,33 @@ HTML provides two categories of formatting tags: Physical Tags (visual appearanc
 
 - `<i>`: Makes text visually italic without implied emphasis
 
-## Text Decoration Tags
-
+## 📚 **Text Decoration Tags**
+### **1. u tag**
     <u>This is underline</u>            <!-- Underlined text -->
 **Output**: <u>This is underline</u>            <!-- Underlined text -->
 
+### **2. ins tag**
     <ins>This is insert tag</ins>       <!-- Inserted/added content -->
 **Output**: <ins>This is insert tag</ins>       <!-- Inserted/added content -->
 
+### **3. mark tag**
     <mark>This is highlighted text</mark> <!-- Highlighted text -->
 **Output**: <mark>This is highlighted text</mark> <!-- Highlighted text -->
 
+### **4. small tag**
     <small>This is small tag</small>     <!-- Smaller font size -->
 **Output**: <small>This is small tag</small>     <!-- Smaller font size -->
 
+### **5. del tag**
     <del>This is deleted text</del>      <!-- Deleted/strikethrough -->
 **Output**: <del>This is deleted text</del>      <!-- Deleted/strikethrough -->
 
-## Subscript and Superscript
-
+## 📚 **Subscript and Superscript**
+### **1. sub tag**
     <p>H<sub>2</sub>O</p>               <!-- Chemical formula -->
 **Output**: <p>H<sub>2</sub>O</p>               <!-- Chemical formula -->
 
+### **2. sup tag**
     <p>E = mc<sup>2</sup></p>           <!-- Mathematical equation -->
 **Output**: <p>E = mc<sup>2</sup></p>           <!-- Mathematical equation -->
 **Discription :**
@@ -57,8 +62,8 @@ HTML provides two categories of formatting tags: Physical Tags (visual appearanc
 
 - `<sup>`: Creates superscript text (above baseline)
 
-## Pre-formatted and Special Tags
-
+## 📚 **Pre-formatted and Special Tags**
+### **1. pre tag**
     <pre>
         Name:     John Doe
         Age:      25
@@ -71,9 +76,11 @@ HTML provides two categories of formatting tags: Physical Tags (visual appearanc
     City:     New York
 </pre>
 
+### **2. kbd tag**
     <p>Press <kbd>Alt</kbd> + <kbd>Tab</kbd> to switch windows.</p>
 **Output**: <p>Press <kbd>Alt</kbd> + <kbd>Tab</kbd> to switch windows.</p>
 
+### **3. abbr tag**
     <p>This uses <abbr title="HyperText Markup Language">HTML</abbr></p>
 **Output**: <p>This uses <abbr title="HyperText Markup Language">HTML</abbr></p>
 
@@ -84,8 +91,8 @@ HTML provides two categories of formatting tags: Physical Tags (visual appearanc
 
 - `<abbr>`: Defines abbreviations with tooltips
 
-## HTML Lists
-### Unordered Lists
+## 📚 **HTML Lists**
+### **1. Unordered Lists**
 
     <ul type="circle">
         <li>Apple</li>
@@ -99,7 +106,7 @@ HTML provides two categories of formatting tags: Physical Tags (visual appearanc
 </ul>
 Types: disc (default), circle, square, none
 
-### Ordered Lists
+### **2. Ordered Lists**
 
     <ol type="I">
         <li>Open the door</li>
@@ -114,7 +121,7 @@ Types: disc (default), circle, square, none
 
 Types: 1 (numbers), A (uppercase), a (lowercase), I (Roman uppercase), i (Roman lowercase)
 
-### Description Lists
+### **3. Description Lists**
 
     <dl>
         <dt>HTML</dt>
@@ -137,8 +144,8 @@ Types: 1 (numbers), A (uppercase), a (lowercase), I (Roman uppercase), i (Roman 
 - `<dd>`: Description definition
 
 
-## Links and Anchor Tags
-### Basic Link Types
+## 📚 **Links and Anchor Tags**
+### **1. Basic Link Types**
 
     <!-- Internal page section -->
     <a href="#section1">Go to Section 1</a>
@@ -158,7 +165,7 @@ Types: 1 (numbers), A (uppercase), a (lowercase), I (Roman uppercase), i (Roman 
         Secure Google Link
     </a>
 
-### Special Link Types
+### **2. Special Link Types**
 
     <!-- Email link -->
     <a href="mailto:support@example.com" title="Contact Support">
@@ -178,7 +185,7 @@ Types: 1 (numbers), A (uppercase), a (lowercase), I (Roman uppercase), i (Roman 
     </button>
 **Output**: <button type="button" onclick="window.location.href='https://www.google.com'">Google Button</button>
 
-### Important Link Attributes:
+### **Important Link Attributes:**
 
 - `target="_blank"`: Opens in new tab
 
@@ -186,7 +193,7 @@ Types: 1 (numbers), A (uppercase), a (lowercase), I (Roman uppercase), i (Roman 
 
 - `title`: Provides tooltip text
 
-## HTML Tables
+## 📚 **HTML Tables**
 ### Complete Table Structure
 
     <table border="1">
@@ -266,4 +273,4 @@ Types: 1 (numbers), A (uppercase), a (lowercase), I (Roman uppercase), i (Roman 
 
 - `colspan="2"`: Cell spans 2 columns horizontally (not shown in example)
 
-# #Day 3 competed
+#

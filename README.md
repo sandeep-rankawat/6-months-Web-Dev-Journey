@@ -1,9 +1,9 @@
-# 150 Days Web Development Journey 🚀
+# 6 Months of Web Development Journey 🚀
 
 Starting my journey from web development enthusiast to job-ready full-stack developer!
 
 **Start Date:** September 13, 2025  
-**End Date:** February 9, 2026  
+**End Date:** March 30, 2026  
 **Goal:** Become a job-ready full-stack web developer
 
 ## 📈 Progress Tracker

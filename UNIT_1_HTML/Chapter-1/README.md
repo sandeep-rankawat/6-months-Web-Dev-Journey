@@ -1,7 +1,4 @@
-# Day 1: HTML Boilerplate Basics
-
-## 📅 Date: September 13, 2025
-## 🎯 Challenge: 100-150 Day Web Development Journey
+# Chapter 1: Introduction
 
 ## What I Learned Today?
 **1. What is HTML?**
@@ -106,3 +103,4 @@ Contains all visible content
 
 Where all HTML elements like headings, paragraphs, images go
 
+#

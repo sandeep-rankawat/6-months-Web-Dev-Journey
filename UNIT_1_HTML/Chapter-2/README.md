@@ -1,9 +1,5 @@
-# Day-2 | HTML Foundations - README Documentation
+# Chapter 2 | HTML Foundations 
 
-## 📋 Project Overview
-This HTML file demonstrates fundamental HTML concepts learned on Day 2 of the HTML learning journey, based on the comprehensive Thapa Technical course structure.[11]
-
-## 🏗️ Document Structure Analysis
 
 ### Basic HTML5 Template Structure
 
@@ -22,7 +18,7 @@ This HTML file demonstrates fundamental HTML concepts learned on Day 2 of the HT
 
 ## 📚 Concepts Demonstrated
 
-### 1. HTML Comments
+### 1. **HTML Comments**
 **Comments** - Comments are the code or any text info that must not be displayed on screen only for developer understanding what going on in web page
 
     <!-- This is comment in html -->
@@ -34,7 +30,7 @@ In html single line and multiline comment having same syntax.
 **Syntax:** `<!-- comment text -->`
 **Purpose:** Code documentation and inline explanations
 
-#### Types
+### -*Types*
 **1. Code Documentation & Info**
 
     <!-- Header Start Here -->
@@ -71,7 +67,7 @@ In html single line and multiline comment having same syntax.
 
 
 
-### 2. HTML Heading Hierarchy (h1-h6)
+### 2. **HTML Heading Hierarchy (h1-h6)**
 **Heading** - They tell the browser that this text is heading not an odrinary text and have style built in like font size, weight etc
 
     <h1>This is heading H1</h1>   <!-- Most Important -->
@@ -83,7 +79,7 @@ In html single line and multiline comment having same syntax.
 **SEO Importance:** Proper heading hierarchy improves search rankings and SEO.
 
 
-### 3. Paragraph Element
+### 3. **Paragraph Element**
 **Para**- para tag to write para  and info about something that can be better understand by browser.
 
     <p>This is para graph</p>
@@ -91,7 +87,7 @@ In html single line and multiline comment having same syntax.
 **Function:** Defines paragraph blocks with automatic spacing
 
 
-### 4. Breaking Elements
+### 4. **Breaking Elements**
 
 #### Horizontal Rule (HR)
     <hr> <!-- Thematic break/separator -->
@@ -105,7 +101,7 @@ In html single line and multiline comment having same syntax.
 **Purpose:** Forces line break without creating new paragraph. When we need the next word start from new line and dont want to use another para to write it then br tag used
 
 
-### 5. Universal Container Element
+### 5. **Universal Container Element**
 
     <div title="div">
         This is universal or global tag used anywhere without restriction.
@@ -120,7 +116,7 @@ In html single line and multiline comment having same syntax.
 - **Most flexible element** in HTML structure
 
 
-### 6. HTML Attributes Demonstration
+### 6. **HTML Attributes Demonstration**
 **Attributes** are the specific keyword that are written in the openning tag of element and this have some specific function 
 
     <p id="para" class="para" title="para">
@@ -139,3 +135,4 @@ Example:-  id, class, title, hidden, etc
 
 **2. Element Specific Attributes**- These attributes are made only for specific elements of tags.
 Example:- href, onclick, type, placeholder, action, auto play, alt, etc
+#
