@@ -5,30 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 4 | HTML Phase - 2</title>
+    <style>
+        * {
+            margin: 10px;
+
+        }
+
+        figure {
+            border: 1px solid grey;
+            display: inline-block;
+        }
+
+        img {
+            height: 300px;
+        }
+
+        video {
+            width: auto;
+            height: 300px;
+        }
+    </style>
 </head>
 
 
 <body>
     <!-- Section A : Image and Picture Tag -->
     <!-- Image Tag -->
-    <img src="/UNIT_1_HTML/Chapter-4/image.png" alt="img" width="100px">
+    <img src="/UNIT_1_HTML/Chapter-4/image.png" alt="img">
 
     <!-- Picture Tag-->
     <picture>
-        <source srcset="/shared-assets/images/examples/surfer.jpg" media="(orientation: portrait)" />
-        <img src="/shared-assets/images/examples/painted-hand.jpg" alt="" />
+        <source
+            srcset="https://images.unsplash.com/photo-1760029012684-7cc3800aba71?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=686"
+            media="(orientation: portrait)" />
+        <img src="https://images.unsplash.com/photo-1759997095170-78b96221964e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+            alt="moutain image" height="300px" />
     </picture>
 
     <!-- Figure tag -->
     <!-- Just an image -->
     <figure>
-        <img src="favicon-192x192.png" alt="The beautiful MDN logo." />
+        <img src="https://developer.mozilla.org/favicon.svg" alt="The beautiful MDN logo." />
     </figure>
 
     <!-- Image with a caption -->
     <figure>
-        <img src="favicon-192x192.png" alt="The beautiful MDN logo." />
-        <figcaption>MDN Logo</figcaption>
+        <img src="https://unsplash.com/favicon-32x32.png" alt="The beautiful unsplash logo." />
+        <figcaption>The Unsplash Logo</figcaption>
     </figure>
 
 
@@ -41,8 +64,8 @@
 
     <!-- Video Tag -->
     <video controls width="250">
-        <source src="/shared-assets/videos/flower.webm" type="video/webm" />
-        <source src="/shared-assets/videos/flower.mp4" type="video/mp4" />
+        <source src="/UNIT_1_HTML/Chapter-4/flower.webm" type="video/webm" />
+        <source src="/UNIT_1_HTML/Chapter-4/flower.webm" type="video/mp4" />
 
         Download the
         <a href="/shared-assets/videos/flower.webm">WEBM</a>
@@ -55,14 +78,14 @@
 
     <!-- Map and Area -->
     <map name="infographic">
-        <area shape="poly" coords="130,147,200,107,254,219,130,228" href="https://developer.mozilla.org/docs/Web/HTML"
+        <area shape="poly" coords="130,147,200,107,254,219,130,228" href="https://developer.mozilla.org/en-US/docs/Web"
             alt="HTML" />
         <area shape="poly" coords="130,147,130,228,6,219,59,107" href="https://developer.mozilla.org/docs/Web/CSS"
             alt="CSS" />
         <area shape="poly" coords="130,147,200,107,130,4,59,107"
             href="https://developer.mozilla.org/docs/Web/JavaScript" alt="JavaScript" />
     </map>
-    <img usemap="#infographic" src="/shared-assets/images/examples/mdn-info2.png" alt="MDN infographic" />
+    <img usemap="#infographic" src="https://developer.mozilla.org/favicon.svg" alt="MDN infographic" />
 
     <!-- iframe Tag -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/xeXV1KoX034?si=QeqsNt24HFBg_Do8"
@@ -70,121 +93,6 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> This iframe tag</iframe>
 
-
-    <!-- Form tag -->
-    <form action="action.php">
-        <fieldset>
-            <legend>Sign In</legend>
-                        <div class="form-group">
-                            <label for="fullName">Name</label>
-                            <input type="text" id="fullName" name="fullname" placeholder="Full Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="userAge">Age</label>
-                            <input type="number" id="userAge" name="UserAge" placeholder="Your Age">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="userGender">Gender:</label>
-                            <label for="userMale">Male</label>
-                            <input type="radio" id="userMale" name="userGender" placeholder="Male" checked>
-                            <label for="userFemale">Female</label>
-                            <input type="radio" id="userFemale" name="userGender" placeholder="Female">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="userEmail">Email</label>
-                            <input type="email" id="userEmail" name="useremail" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Password">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="salarRange">Salary Range</label>
-                            <input type="range" min="0" max="300000" title="Salary">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="dob">Date Of Birth</label>
-                            <input type="date" id="userdob" name="userdob" placeholder="1/1/1990">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="userImage">Profile Pic</label>
-                            <input type="image" id="userImage" name="userImage" src="/UNIT_1_HTML/Chapter-4/image.png"
-                                width="100px">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="userLink"> Link</label>
-                            <input type="url" id="userLink" name="userLink" placeholder="Paste Your link">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="userColor">Favourite Color: </label>
-                            <input type="color" id="userColor" name="userColor" placeholder="Select your color"
-                                title="Select your color">
-                        </div>
-                        <div class="form-group">
-                            <label for="userColor">Select Your Cab </label>
-                            <select title="Select Your Cab" name="vehicle" id="userVehicle">
-                                <option value="None" selected disabled>Choose Your Cab</option>
-                                <option value="carCab">Car cab</option>
-                                <option value="busCab">Bus Cab</option>
-                                <option value="tuoristCab">Tourist Cab</option>
-                                <option value="FemaleCab"> Female Tourist Cab</option>
-                                <option value="publicTransport">Public Transport</option>
-                                <option value="personal">Personal Vehicle(Owned by Company)</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="userFile">File</label>
-                            <input type="file" id="userFile" name="userFile" accept="image/png, image/jpeg">
-                        </div>
-                        <div class="form-group">
-                            <label for="search">Search</label>
-                            <input type="search" id="search" name="Search" placeholder="Search What to want to ">
-                        </div>
-
-                        <div class="from-group">
-                            <label for="appointment">Choose a time for your meeting:</label>
-
-                            <input type="time" id="appointment" name="appointment" min="09:00" max="18:00" required />
-                        </div>
-
-                        <div id="tac">
-                            <input type="checkbox" name="tac" placeholder="tac" checked>
-                            <span>
-                                By Clicking this you are agree with our terms and conditions
-                                <a href="/" class="t&c">Term and Condition</a>.
-                            </span>
-                        </div>
-
-                        <div>
-                            <input type="reset">
-                            <input type="submit">
-                        </div>
-
-
-
-                        <button type="submit" class="btn-signin">Sign Up</button>
-
-                        <div class="divider">OR</div>
-
-                        <div class="signup-link">
-                            Don't have an account? <a href="#">Sign In</a>
-                        </div>
-                </div>
-        </fieldset>
-    </form>
 </body>
 
 </html>
