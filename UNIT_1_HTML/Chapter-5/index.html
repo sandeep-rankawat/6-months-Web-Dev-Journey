@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Section A: Metadata Tags in HTML5 -->
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Chapter 5 | HTML Phase-3 </title>
+
+    <!-- SEO: Page description -->
+    <meta name="description"
+        content="Comprehensive HTML5 tutorial covering form elements, semantic tags, and modern web development best practices with practical examples.">
+
+    <!-- SEO: Author name -->
+    <meta name="author" content="Sandeep Sharma">
+
+    <!-- SEO: Keywords -->
+    <meta name="keywords" content="HTML5, forms, semantic elements, web development, HTML tutorial, input types">
+
+    <!-- Search engine indexing behavior -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Compatibility with Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile browser theme color -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph Metadata Tags for social media sharing -->
+    <meta property="og:title" content="HTML5 Forms & Semantic Elements Tutorial">
+    <meta property="og:description" content="Learn HTML5 form elements and semantic tags with comprehensive examples.">
+    <meta property="og:image" content="https://example.com/images/html-tutorial.jpg">
+    <meta property="og:url" content="https://example.com/html-tutorial">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HTML5 Forms & Semantic Elements Tutorial">
+    <meta name="twitter:description" content="Master HTML5 form elements and semantic tags with practical examples.">
+    <meta name="twitter:image" content="https://example.com/images/html-tutorial.jpg">
+    <meta name="twitter:creator" content="@SandeepSharma">
+
+    <style>
+        * {
+            margin: 10px;
+        }
+
+        fieldset:is(.gender, .buttons) {
+            display: inline-block;
+        }
+
+        span:not(.tac) {
+            background-color: #333;
+            font-size: 1.2rem;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 4px;
+        }
+
+        /* Improved form styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 150px;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Semantic section styling */
+        header, main, footer, section, aside, article, nav {
+            margin: 15px 0;
+            padding: 10px;
+        }
+
+        .semantic-demo {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Section B: Form Elements -->
+    <h1>HTML5 Form Elements Tutorial</h1>
+    
+    <form action="action.php" method="POST">
+        <fieldset>
+            <legend>User Registration Form</legend>
+            
+            <!-- Text Input: For collecting user's full name -->
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            
+            <!-- Number Input: For collecting user's age with min/max validation -->
+            <div class="form-group">
+                <label for="userAge">Age</label>
+                <input type="number" id="userAge" name="userAge" placeholder="Your age" min="18" max="100" required>
+            </div>
+
+            <!-- Radio Buttons: For gender selection (single choice) -->
+            <fieldset class="gender">
+                <legend>Select Your Gender</legend>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </fieldset>
+            
+            <!-- Email Input: For collecting email address with built-in validation -->
+            <div class="form-group">
+                <label for="userEmail">Email Address</label>
+                <input type="email" id="userEmail" name="useremail" placeholder="example@email.com" required>
+            </div>
+            
+            <!-- Tel Input: For collecting phone number with pattern validation -->
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+91-XXXXXXXXXX" pattern="[0-9]{10}">
+            </div>
+
+            <!-- Password Input: For secure password entry with minimum length requirement -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" minlength="8" required>
+            </div>
+
+            <!-- Range Input: For selecting salary range using slider -->
+            <div class="form-group">
+                <label for="salaryRange">Salary Range (₹)</label>
+                <input type="range" id="salaryRange" name="salaryRange" min="0" max="300000" step="10000" title="Salary: ₹0 - ₹3,00,000">
+            </div>
+
+            <!-- Date Input: For selecting date of birth using date picker -->
+            <div class="form-group">
+                <label for="userdob">Date of Birth</label>
+                <input type="date" id="userdob" name="userdob" required>
+            </div>
+
+            <!-- URL Input: For collecting website/portfolio links with URL validation -->
+            <div class="form-group">
+                <label for="userLink">Website/Portfolio</label>
+                <input type="url" id="userLink" name="userLink" placeholder="https://example.com">
+            </div>
+
+            <!-- Color Input: For selecting favorite color using color picker -->
+            <div class="form-group">
+                <label for="userColor">Favorite Color</label>
+                <input type="color" id="userColor" name="userColor" title="Pick your favorite color">
+            </div>
+            
+            <!-- Select Dropdown: For choosing transportation option from predefined list -->
+            <div class="form-group">
+                <label for="userVehicle">Select Transportation</label>
+                <select name="vehicle" id="userVehicle" required>
+                    <option value="" selected disabled>Choose Your Cab</option>
+                    <option value="carCab">Car Cab</option>
+                    <option value="busCab">Bus Cab</option>
+                    <option value="touristCab">Tourist Cab</option>
+                    <option value="femaleCab">Female Tourist Cab</option>
+                    <option value="publicTransport">Public Transport</option>
+                    <option value="personal">Personal Vehicle (Company Owned)</option>
+                </select>
+            </div>
+
+            <!-- File Input: For uploading profile picture (accepts only images) -->
+            <div class="form-group">
+                <label for="userFile">Upload Profile Picture</label>
+                <input type="file" id="userFile" name="userFile" accept="image/png, image/jpeg, image/jpg">
+            </div>
+            
+            <!-- Search Input: For general search functionality -->
+            <div class="form-group">
+                <label for="search">Search</label>
+                <input type="search" id="search" name="search" placeholder="Search here...">
+            </div>
+
+            <!-- Time Input: For scheduling appointment with time restrictions -->
+            <div class="form-group">
+                <label for="appointment">Appointment Time</label>
+                <input type="time" id="appointment" name="appointment" min="09:00" max="18:00" required>
+            </div>
+
+            <!-- Checkbox Input: For accepting terms and conditions -->
+            <div class="form-group">
+                <input type="checkbox" id="tac" name="tac" required>
+                <label for="tac">
+                    <span class="tac">
+                        I agree to the <a href="/terms" target="_blank">Terms and Conditions</a>
+                    </span>
+                </label>
+            </div>
+
+            <!-- Button Group: Form action buttons (reset and submit) -->
+            <fieldset class="buttons">
+                <legend>Form Actions</legend>
+                <input type="reset" value="Reset Form">
+                <input type="submit" value="Submit Form">
+            </fieldset>
+        </fieldset>
+    </form>
+
+    <br>
+    
+    <!-- Section C: HTML5 Semantic Elements -->
+    <h2>HTML5 Semantic Elements</h2>
+
+    <div class="semantic-demo">
+        <!-- Header Element: Represents introductory content and navigation for the page -->
+        <header>
+            <span>header:</span> Represents introductory content or navigational aids. Contains logos, site navigation, and page titles.
+            
+            <!-- Nav Element: Contains navigation links and menu items -->
+            <nav>
+                <span>nav:</span> Defines navigation links section. Contains main menu, breadcrumbs, and important quick links.
+            </nav>
+        </header>
+
+        <!-- Main Element: Contains the primary content of the document (should be unique) -->
+        <main>
+            <span>main:</span> Represents the dominant content of the document. Should be unique and not repeated across pages.
+
+            <!-- Section Element: Defines a thematic grouping of content with a heading -->
+            <section>
+                <span>section:</span> Defines thematic grouping of content with a heading. Used for testimonials, courses, features, etc.
+            </section>
+
+            <!-- Aside Element: Contains content tangentially related to main content -->
+            <aside>
+                <span>aside:</span> Contains content tangentially related to the main content. Typically used for sidebars, call-outs, or related links.
+            </aside>
+
+            <!-- Article Element: Represents independent, self-contained content -->
+            <article>
+                <span>article:</span> Represents independent, self-contained content. Used for blog posts, news articles, or forum posts.
+            </article>
+        </main>
+
+        <!-- Footer Element: Contains footer information and metadata for the document -->
+        <footer>
+            <span>footer:</span> Contains footer information for the document or section. Includes copyright, contact info, and important links.
+        </footer>
+    </div>
+</body>
+
+</html>
