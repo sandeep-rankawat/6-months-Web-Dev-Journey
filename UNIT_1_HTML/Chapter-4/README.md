@@ -26,14 +26,8 @@ This phase contains various multimedia and interactive HTML tags including image
 
 ## File References
 
-- Images are loaded from local paths or shared asset URLs.
-- Audio and video sources are linked from shared asset directories.
+- Images are loaded from local paths or URLs.
+- Audio and video sources are linked from URLs.
 - External links for documentation and YouTube are embedded for interactivity.
-
-## Notes
-
-- Make sure file paths like `/Day-004/image.png` and `/shared-assets/` are valid and accessible relative to the HTML file location.
-- Supported media formats include common image (PNG, JPG), audio (MP3), and video (WebM, MP4) files.
-- The example uses polygonal clickable areas in the image map demonstrating advanced interactive image features.
 
 #
