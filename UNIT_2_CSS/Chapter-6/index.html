@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter - 6 | CSS Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .internal {
+            color: rgb(255, 0, 0);
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <!-- ! Ignore What CSS written in it. This is basic for css -->
+    <h1>Multiple Way to Adding CSS in HTML. </h1>
+
+    <!-- Inline CSS -->
+    <p style="color: green;">This inline Style example.</p>
+
+    <!-- Internal style is done in head tag within style tag -->
+    <p class="internal">This is example of internal CSS</p>
+
+    <!--External style is applied by linking CSS File Separately in head of index.html-->
+    <p class="external">This is extrnal CSS</p>
+
 </body>
+
 </html>
